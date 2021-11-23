@@ -1,0 +1,108 @@
+.navbar{
+    background-color: #359fd9 !important;
+}
+.navbar-brand img{
+    width: 150px;
+    padding-left: 60px;
+}
+.navbar-nav{
+    padding-left: 700px;
+}
+.navbar-nav a{
+    font-weight: bold;
+    padding-right: 50px !important;
+    color: black !important;
+}
+.btn{
+    width: 120px;
+    font-weight: bold;
+    margin-right: 30px;
+}
+.background{
+    background-image: url('images/background-img.jpeg');
+    height: 80vh;
+    align-items: center;
+}
+.reset-form{
+    height: 400px;
+    width: 400px;
+    padding-top: 50px;
+    padding-left: 50px;
+    position: relative;
+    left: 35%;
+    top: 50px;
+}
+form h3{
+    font-weight: bold;
+    font-family: sans-serif;
+}
+form label{
+    font-weight: bold;
+    padding-top: 30px;
+}
+input{
+    width: 250px;
+    border: 1px solid black;
+}
+.resetbtn{
+    margin-top: 40px;
+    width: 250px !important;
+}
+#message{
+    color: red;
+ 
+}
+#message2{
+    color: red;
+}
+footer{
+    height: 71px;
+    width: 100%;
+    background: #359fd9;  
+}
+footer ul{
+    margin-left: 60px;
+}
+footer ul li{
+    display: inline-block;
+    padding-left: 50px;
+    line-height: 70px;
+    
+}
+footer ul li a{
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar-brand img{
+       
+        padding-left: 10px;
+    }
+    .navbar-nav{
+        padding: 10px 0px;
+    }
+    .reset-form{
+        height: 100%;
+        width: 100%;
+        position: relative;
+        left: 0;
+    }
+    footer ul{
+        margin-left: 0px;
+    }
+    footer ul li{
+        padding-left: 10px;  
+    }
+    footer ul li a{
+       font-size: 11px;
+    }
+    input{
+        width: 260px;
+    }
+    .resetbtn{
+        width: 260px !important;
+    }
+  }

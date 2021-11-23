@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="images/logo.jpeg" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Join a Race</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Leaderboard</a>
+              </li>
+            </ul>
+              <button class="btn btn-light" type="submit">Login</button>
+          </div>
+        </div>
+      </nav>
+    <!-- navbar end -->
+    <div class="background">
+        <div class="reset-form">
+            <form  onsubmit="return myfun()">
+                <h3>Password Reset</h3>
+                <label>NEW PASSWORD</label><br>
+                <input type="password" name="password" id="password" value="" ><br>
+                <span id="message"></span><br>
+                <label>RE-ENTER NEW PASSWORD</label><br>
+                <input type="password" name="confirm-password" id="confirm-password" value="" ><br>
+                <span id="message2"></span><br>
+                <input class="resetbtn btn btn-dark" type="submit" value=" RESET PASSWORD">
+            </form>
+        </div>
+    </div>
+    <!-- footer start -->
+    <footer>
+        <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Tutorials</a></li>
+            <li><a href="#">Terms of Service</a></li>
+        </ul>
+    </footer>
+    <!-- footer end -->
+<script>
+    function myfun(){
+        var a = document.getElementById("password").value;
+        var b = document.getElementById("confirm-password").value;
+
+        if(a==""){
+            document.getElementById("message").innerHTML="Please fill";
+            return false;
+        }
+        if(a.length>8){
+            document.getElementById("message").innerHTML="password length must be less then 8";
+            return false;
+        }
+        if(a!=b){
+            document.getElementById("message2").innerHTML="Password not matched";
+            return false;
+        }else{
+            document.getElementById("message2").innerHTML="Password Reset successfull";
+            return false;
+        }
+    }
+</script>
+    
+</body>
+</html>
